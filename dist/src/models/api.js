@@ -1,4 +1,4 @@
-import { actualizarTituloPost, crearPost, eliminarPost, filtrarPostsPorUsuario, obtenerPostPorId, obtenerPosts } from "../servicios/postService";
+import { actualizarTituloPost, crearPost, eliminarPost, filtrarPostsPorUsuario, obtenerPostPorId, obtenerPosts } from "../servicios/postService.js";
 const txtId = document.getElementById("id");
 const txtUserId = document.getElementById("userId");
 const txtTitulo = document.getElementById("title");

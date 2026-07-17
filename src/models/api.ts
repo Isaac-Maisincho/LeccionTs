@@ -6,7 +6,7 @@ import {
   obtenerPostPorId,
   obtenerPosts,
   type Post
-} from "../servicios/postService";
+} from "../servicios/postService.js";
 
 const txtId = document.getElementById("id") as HTMLInputElement | null;
 const txtUserId = document.getElementById("userId") as HTMLInputElement | null;
