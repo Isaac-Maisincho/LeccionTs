@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSONPlaceholder CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <h1>CRUD de publicaciones con JSONPlaceholder</h1>
+        <p>Consulta, filtra, crea, actualiza y elimina publicaciones mediante la API pública.</p>
+      </header>
+
+      <section class="panel">
+        <h2>Operaciones</h2>
+        <div class="form-grid">
+          <label>
+            ID
+            <input id="id" type="number" placeholder="ID de la publicación" />
+          </label>
+          <label>
+            Usuario
+            <input id="userId" type="number" placeholder="ID del usuario" />
+          </label>
+          <label>
+            Título
+            <input id="title" type="text" placeholder="Título de la publicación" />
+          </label>
+          <label class="full-width">
+            Contenido
+            <textarea id="body" rows="4" placeholder="Contenido de la publicación"></textarea>
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button id="listar">Listar</button>
+          <button id="buscar">Buscar por ID</button>
+          <button id="filtrar">Filtrar por usuario</button>
+          <button id="crear">Crear</button>
+          <button id="actualizar">Actualizar título</button>
+          <button id="eliminar">Eliminar</button>
+        </div>
+
+        <div id="mensaje" class="mensaje exito">Cargando publicaciones...</div>
+      </section>
+
+      <section class="panel">
+        <h2>Publicaciones</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Usuario</th>
+              <th>Título</th>
+              <th>Contenido</th>
+            </tr>
+          </thead>
+          <tbody id="tablaPosts"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script type="module" src="./dist/models/api.js"></script>
+  </body>
+</html>
